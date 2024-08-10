@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+#element {
+   background-image: url('./components/extraImages/broken.png');
+}
+
+:root {
+    --colorDark1: #112d4e;
+    --colorDark2: #3f72af;
+    --colorLight1: #dbe2ef;
+    --colorLight2: #f9f7f7;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    color: var(--colorLight2);
+    background-color: #112d4e;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+
+/* Heading and Tab Container 
+ */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 1.75px;
+    margin-block: 2rem;
+}
+
+.tabContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-block: 3rem;
+}
+
+.tab {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    background-color: var(--colorDark1);
+    cursor: pointer;
+}
+
+.tab:hover {
+    opacity: 0.75;
+}
+
+.currentTab {
+    background-color: var(--colorDark2);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* FORM COMPONENT 
+ */
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.formContainer input {
+    padding: 1rem;
+    flex-grow: 1;
+    border-radius: 4px;
+    border: none;
+}
+
+.formContainer input:focus {
+    outline: none;
+}
+
+.btn {
+    padding: 1rem;
+    border: none;
+    background-color: var(--colorDark2);
+    cursor: pointer;
+}
+
+.btn img {
+    vertical-align: middle;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* GRANT LOCATION COMPONENT 
+ */
+
+.grantLocationContainer {
+    text-align: center;
+}
+
+.grantLocationContainer img {
+    margin-block: 2rem;
+}
+
+.grantLocationContainer p:first-of-type {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.grantLocationContainer p:nth-of-type(2) {
+    margin-block: 1rem 3rem;
+}
+
+/* LOADING COMPONENT 
+ */
+.loadingContainer {
+    text-align: center;
+}
+
+/* WEATHER COMPONENT 
+ */
+
+.userInfoContainer {
+    text-align: center;
+    padding: 2rem;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.name img {
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.userInfoContainer img {
+    margin-block: 1rem;
+}
+
+.parameterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.parameter img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.parameter p:first-of-type {
+    text-transform: capitalize;
+}
+
+.parameterValue {
+    margin-top: 0.5rem;
+}
+
+/* ERROR COMPONENT 
+ */
+
+.errorContainer {
+    text-align: center;
+    padding: 2rem;
+}
+
+.errorContainer img {
+    object-fit: cover;
+    margin-block: 1rem 2rem;
+}
