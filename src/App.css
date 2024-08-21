@@ -185,12 +185,13 @@ h1 {
 
 .errorContainer {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .errorContainer img {
     object-fit: cover;
     margin-block: 1rem 2rem;
+    height: 50vh;
 }
 
 .suggestionsDropdown {
