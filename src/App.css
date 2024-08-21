@@ -8,7 +8,10 @@
 }
 
 #element {
-   background-image: url('./components/extraImages/broken.png');
+   /* background-image: url('./components/extraImages/broken.png'); */
+}
+.userInfoContainer{
+    border: 2px solid rgb(8, 3, 19);
 }
 
 :root {
@@ -17,6 +20,10 @@
     --colorLight1: #dbe2ef;
     --colorLight2: #f9f7f7;
 }
+
+
+/* Other styles as needed */
+
 
 .wrapper {
     height: 100vh;
@@ -185,3 +192,149 @@ h1 {
     object-fit: cover;
     margin-block: 1rem 2rem;
 }
+
+.suggestionsDropdown {
+    position: absolute;
+    top: 100%; /* Position below the input */
+    left: 0;
+    right: 0;
+    background-color: var(--colorDark2);
+    border: 1px solid #ccc;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px; /* Rounded corners */
+}
+
+.suggestionsDropdown li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #221f1f;
+}
+
+.suggestionsDropdown li:last-child {
+    border-bottom: none;
+}
+
+.suggestionsDropdown li:hover {
+    background-color: var(--colorLight1);
+}
+
+/* Adjust formContainer for positioning */
+.formContainer {
+    position: relative; /* Ensure dropdown is correctly positioned */
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.formContainer input {
+    padding: 1rem;
+    flex-grow: 1;
+    border-radius: 4px;
+    border: none;
+}
+
+.formContainer input:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+/* App.css */
+
+/* General styling for the user info container */
+.userInfoContainer {
+  padding: 2rem;
+  color: #fff; /* Assuming light text color */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px; /* Optional, to give a rounded look */
+}
+
+/* Styling for the name section */
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.name p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.name img {
+  width: 48px; /* Adjust size as needed */
+  height: 36px;
+  object-fit: cover;
+  border-radius: 4px; /* Optional, for rounded flags */
+}
+
+/* Styling for weather description */
+.userInfoContainer p {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+/* Styling for the weather icon */
+.userInfoContainer img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Styling for temperature */
+.userInfoContainer p:nth-of-type(2) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Parameter container styling */
+.parameterContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.parameter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parameter img {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  margin-bottom: 0.5rem;
+}
+
+.parameter p {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.parameterValue {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+

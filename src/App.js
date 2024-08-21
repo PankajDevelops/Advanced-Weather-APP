@@ -92,6 +92,12 @@ function App() {
 
   return (
     <div className="wrapper">
+      {/* Fullscreen background */}
+      <div
+        className="fullscreen-background"
+        style={{ backgroundImage: "url('./components/extraImages/broken.png')" }}
+      />
+      
       <h1>Weather App</h1>
       <div className="tabContainer">
         <p
