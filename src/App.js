@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css"; // The CSS file for styling
+import "./App.css";
 import SearchForm from "./components/SearchForm";
 import GrantLocation from "./components/GrantLocation";
 import Loading from "./components/Loading";
